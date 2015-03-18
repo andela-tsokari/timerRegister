@@ -12,15 +12,13 @@ The features include:
 
 2. **Start Timer:** Start a Countdown Timer using the preset duration. This instantiates a Running Timer with a countdown. 
 
-		For now, the running timer alerts on completion and deletes itself. Other possibilities will be added. 
+	For now, the running timer alerts on completion and deletes itself. Other possibilities will be added. 
 
 3. **Edit/Update Timer:** Timer Duration can be edited permanently in the "Your Timers" tab, or/and a Running Timer can be edited temporarily in the "Running Timer(s)" tab. 
 
 4. **Delete Timer:** A previously saved timer in "Your Timer(s)" or "Running Timer(s)" can be deleted.
 
-
-
-		N.B.: Editing of Timer Name is not allowed because this will duplicate the Add New Timer feature. Perhaps, I may review this when timer options are available. Do let me know if you'd like the feature added.
+	N.B.: Editing of Timer Name is not allowed because this will duplicate the Add New Timer feature. Perhaps, I may review this when timer options are available. Do let me know if you'd like the feature added.
 
 
 ##Viewing
