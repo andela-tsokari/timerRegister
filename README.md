@@ -23,7 +23,7 @@ The features include:
 
 
 		N.B.: Editing of Timer Name is not allowed because this will duplicate the Add New Timer feature. Perhaps, I may review this when timer options are available. Do let me know if you'd like the feature added.
-```
+
 
 ##Viewing
 
