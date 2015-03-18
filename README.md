@@ -27,4 +27,4 @@ For now, this is a solo project. Later on, I may be inclined to allow collaborat
 
 You may view progress of this app via its gh-pages [here](http://andela-tsokari.github.io/timers).
 
-## **N.B.:** This is my first README for this update and is subject to update.
+## **N.B.:** This is my first README for this application and is subject to update.
