@@ -7,6 +7,7 @@ On the 5th of March, I began learning AngularJS.
 This application is being built using [AngularJS](http://angularjs.org) framework.
 It is an application done using CRUD principles.
 The features include:
+
 1. **Add Timer:** In this, a user can add a timer. giving it a duration (in hours, minutes and seconds). This timer(s) is stored in a "Your Timers" tab.
 
 2. **Start Timer:** Start a Countdown Timer using the preset duration. This instantiates a Running Timer with a countdown. 
