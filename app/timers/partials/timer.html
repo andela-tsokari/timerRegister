@@ -1,0 +1,15 @@
+<section ng-repeat="timer in timers" ng-controller="Timer Controller">
+	<section class="row container"><h1>{{timer.name}}</h1></section>
+	<section class="col-md-4"><h2>Hour(s)</h2></section>
+	<section class="col-md-4"><h2>Minute(s)</h2></section>
+	<section class="col-md-4"><h2>Seconds</h2></section> </section><br/>
+
+	<section class="col-md-4"><h3>{{timer.hh}</h3></section>
+	<section class="col-md-4"><h3>{{timer.mm}}</h3></section>
+	<section class="col-md-4"><h3>{{timer.ss}}</h3>{{timer.ss}}</section>
+	<section class="btn-group col-md-12">
+		<button class="btn btn-default col-md-4" ng-click="startTimer(timer)">Start Timer</button>
+		<button class="btn btn-default  col-md-4" ng-click="editTimer(timer)">Edit Timer</button>
+		<button class="btn btn-default  col-md-4" ng-click="deleteTimer(timer)">Delete Timer</button>
+	</section>
+</section>

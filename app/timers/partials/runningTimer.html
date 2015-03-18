@@ -1,0 +1,15 @@
+<section ng-repeat="runningTimer in runningTimers" ng-controller="RunningTimerController">
+	<section class="row"><h4>{{runningTimer.name}}</h4></section>
+	
+	<section class="col-md-4">{{runningTimer.hh}}</section>
+	<section class="col-md-4">{{runningTimer.mm}}</section>
+	<section class="col-md-4">{{runningTimer.ss}}</section>
+
+	<section class="col-md-12">{{runningTimer.timerStr}}
+		<section class="btn-group row">
+			<button>Edit Timer</button>
+			<button>Delete Timer</button>
+			<button>Restart Timer</button>
+		</section>
+	</section>
+</section>

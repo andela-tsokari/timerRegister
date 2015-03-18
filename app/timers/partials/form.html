@@ -1,0 +1,16 @@
+<form name = "addTimer" novalidate ng-controller="">
+  <input ng-model = "timer.name" type = "text" maxlength = "50" placeholder = "Name your Timer" required /><br />
+  <fieldset>
+  	<label>HH<br />
+  	<input ng-model = "timer.hh" type = "number" max = "23" min = "0" step = "1" value = "0" /></label><br />
+
+  	<label>MM<br />
+  	<input ng-model = "timer.mm" type = "number" min = "0" max = "59" step = "1" value = "0" /></label><br />
+
+  	<label>SS<br />
+  	<input ng-model = "timer.ss" type = "number" min = "1" max = "59" step = "1" value = "1" required /></label><br />
+  </fieldset>
+  
+  <button type="submit" ng-click="" ng-submit="" >Edit Timer</button>
+  <button type="submit" ng-submit="">Start Timer</button>
+</form>
