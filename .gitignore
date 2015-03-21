@@ -1,11 +1,6 @@
-<<<<<<< HEAD
 tests
 node_modules
 karma.conf.js
 package.json
 .bowerrc
 bower.json
-=======
-libs
-node_modules
->>>>>>> master
