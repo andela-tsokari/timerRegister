@@ -3,4 +3,8 @@ node_modules
 karma.conf.js
 package.json
 .bowerrc
+<<<<<<< HEAD
 bower.json
+=======
+bower.json
+>>>>>>> b2324ab4a6cb5357cf5d8c881e4481e68dbab6f1
