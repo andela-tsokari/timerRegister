@@ -1,1 +1,6 @@
 tests
+node_modules
+karma.conf.js
+package.json
+.bowerrc
+bower.json
