@@ -16,14 +16,25 @@ The features include:
 
 3. **Edit/Update Timer:** Timer Duration can be edited permanently in the "Your Timers" tab, or/and a Running Timer can be edited temporarily in the "Running Timer(s)" tab. 
 
+<<<<<<< HEAD
 4. **Delete Timer:** A previously saved timer in "Your Timer(s)" or "Running Timer(s)" can be deleted.
 
 	**N.B.:** Editing of Timer Name is not allowed because this will duplicate the Add New Timer feature. Perhaps, I may review this when timer options are available. Do let me know if you'd like the feature added.
+=======
+4. **Delete Timer:** A previously saved timer in "Your Timer(s)" or "Running Timer(s)" tab can be deleted.
+
+	**N.B.:** Editing of Timer Name is not allowed because this will duplicate the Add New Timer feature. Perhaps, I may review this when timer options are available. Do let me know if you'd like the feature added.
+
+>>>>>>> master
 
 ##Viewing
 
 For now, this is a solo project. Later on, I may be inclined to allow collaborators.
 
+<<<<<<< HEAD
 You may view progress of this app via its gh-pages [here](https://andela-tsokari.github.io/timers).
+=======
+You may view progress of this app via its gh-pages [here](http://andela-tsokari.github.io/timers).
+>>>>>>> master
 
 ## **N.B.:** This is my first README for this application and is subject to update.

@@ -1,0 +1,136 @@
+<!doctype html>
+
+<html lang="en">
+	
+	<head>
+		
+		<title>Timer Register Home</title>
+
+		<meta charset="utf-8" />
+
+		<link rel="stylesheet" type="text/css" href="assets/css/timers.css" />
+		
+		<link rel="stylesheet" type="text/css" href="assets/css/vendor/bootstrap/css/bootstrap.css" /> 
+
+	</head>
+
+	<body class="container col-md-8 center-content col-md-offset-2" ng-app="timer">
+	
+		<section ng-controller="ViewController">
+	
+			<ul class="nav nav-pills" >
+
+				<li ng-class="{ active: isSelected(1) }"> <a href ng-click="selectTab(1)">Add a Timer</a></li>
+				
+				<li ng-class="{ active: isSelected(2) }"> <a href ng-click="selectTab(2)">Your Timer(s)</a></li>
+				
+				<li ng-class="{ active: isSelected(3) }"> <a href ng-click="selectTab(3)">Running Timer(s)</a></li>
+	
+			</ul>
+
+			<form class = "panel col-md-12" name="timerForm" novalidate ng-show="isSelected(1)" ng-controller="FormController" ng-submit="timerForm$valid && addTimer(newTimer)">
+
+			  <input ng-model = "newTimer.name" type = "text" maxlength = "50" placeholder = "Name your Timer (max: 50 characters" required="" /><br />
+
+			  <fieldset class="panel panel-default">
+
+			  	<label>HH<br />
+
+			  	<input ng-model = "newTimer.hh" type = "number" max = "23" min = "0" step = "1" value = "0" /></label><br />
+
+			  	<label>MM<br />
+
+			  	<input ng-model = "newTimer.mm" type = "number" min = "0" max = "59" step = "1" value = "0" /></label><br />
+
+			  	<label>SS<br />
+
+			  	<input ng-model = "newTimer.ss" type = "number" min = "30" max = "59" step = "1" value = "30" required="" /></label><br />
+
+			  </fieldset>
+
+			  <section>timerForm is {{timerForm.$valid}}</section>
+
+			  <button type="submit" class="btn btn-block" ng-click="addTimer(newTimer)">Save Timer</button>
+
+			  <section ng-repeat="timer in timers">
+			  	<section class="row"><h2>{{timer.name}}</h2></section>
+			  	<section class="col-md-4"><h2>Hour(s)</h2></section>
+			  	<section class="col-md-4"><h2>Minute(s)</h2></section>
+			  	<section class="col-md-4"><h2>Seconds</h2></section><br/>
+			  	<section class="col-md-4"><h3>{{timer.hh}}</h3></section>
+			  	<section class="col-md-4"><h3>{{timer.mm}}</h3></section>
+			  	<section class="col-md-4"><h3>{{timer.ss}}</h3></section><br />
+			  	<section class="btn-group col-md-12">
+			  		<button class="btn btn-default col-md-4" ng-click="startTimer(timer)">Start Timer</button>
+			  		<button class="btn btn-default  col-md-4" ng-click="editTimer(timer)">Edit Timer</button>
+			  		<button class="btn btn-default  col-md-4" ng-click="deleteTimer(timer)">Delete Timer</button>
+			  	</section>
+			  </section>
+
+			</form>
+
+			<section class="panel panel-default col-md-12" ng-show="isSelected(2)" >
+	
+				<h4>Your Timer(s)</h4>
+	
+				<section ng-repeat="timer in timers" ng-controller="Timer Controller">
+					<section class="row"><h4>{{timer.name}}</h4></section>
+					<section class="col-md-4">{{timer.hh}</section>
+					<section class="col-md-4">{{timer.mm}}</section>
+					<section class="col-md-4">{{timer.ss}}</section>
+					<section class="btn-group col-md-12">
+						<button class="btn btn-default col-md-4" ng-click="startTimer(timer)">Start Timer</button>
+						<button class="btn btn-default  col-md-4" ng-click="editTimer(timer)">Edit Timer</button>
+						<button class="btn btn-default  col-md-4" ng-click="deleteTimer(timer)">Delete Timer</button>
+					</section>
+				</section>
+				
+			</section>
+
+			<section class="col-md-12 panel panel-default" ng-show="isSelected(3)">
+				
+				<h4>Running Timer(s)</h4>
+				
+				<section ng-repeat="runningTimer in runningTimers" ng-controller="RunningTimerController">
+					<section class="row"><h4>{{runningTimer.name}}</h4></section>
+					
+					<section class="col-md-4">{{runningTimer.hh}}</section>
+					<section class="col-md-4">{{runningTimer.mm}}</section>
+					<section class="col-md-4">{{runningTimer.ss}}</section>
+
+					<section class="col-md-12">{{runningTimer.timerStr}}
+						<section class="btn-group row">
+							<button>Edit Timer</button>
+							<button>Delete Timer</button>
+							<button>Restart Timer</button>
+						</section>
+					</section>
+				</section>
+			
+			</section>
+		
+		</section>
+
+		<script type="text/javascript" src="assets/js/vendor/angular/angular.js" ></script>
+		
+		<script type="text/javascript" src="app/timer.module.js"></script>
+		
+		<script type="text/javascript" src="app/timers/timer.controllers.module.js"></script>
+		
+		<script type="text/javascript" src="app/timers/controllers/viewController.js"></script>
+
+		<script type="text/javascript" src="app/timers/controllers/formController.js"></script>
+
+		<script type="text/javascript" src="app/timers/controllers/timerController.js"></script>
+
+		<script type="text/javascript" src="app/timers/controllers/runningTimerController.js"></script>
+		
+		<script type="text/javascript" src="app/timers/timer.directives.module.js"></script>
+		
+		<script type="text/javascript" src="app/timers/timer.services.module.js"></script>
+		
+		<script type="text/javascript" src="app/timers/timer.filters.modele.js"></script>
+	
+	</body>
+
+</html>
